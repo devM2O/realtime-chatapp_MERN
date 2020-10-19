@@ -1,4 +1,4 @@
-import { popperGenerator, detectOverflow } from "./createPopper.js";
+import { popperGenerator, detectOverflow } from "./index.js";
 import eventListeners from "./modifiers/eventListeners.js";
 import popperOffsets from "./modifiers/popperOffsets.js";
 import computeStyles from "./modifiers/computeStyles.js";
@@ -13,8 +13,4 @@ var createPopper = /*#__PURE__*/popperGenerator({
   defaultModifiers: defaultModifiers
 }); // eslint-disable-next-line import/no-unused-modules
 
-export { createPopper, popperGenerator, defaultModifiers, detectOverflow }; // eslint-disable-next-line import/no-unused-modules
-
-export { createPopper as createPopperLite } from "./popper-lite.js"; // eslint-disable-next-line import/no-unused-modules
-
-export * from "./modifiers/index.js";
+export { createPopper, popperGenerator, defaultModifiers, detectOverflow };
